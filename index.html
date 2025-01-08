@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stef's Showcase - A modern, interactive personal portfolio.">
+    <meta name="author" content="Stef">
+    <title>Stef's Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#asd-diary">ASD Diary</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#safeguarding">18+ Access</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p>Welcome to Stef's Showcase! This section will introduce you to my hobbies, interests, and more.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Project 1</button>
+                    <div class="accordion-content">
+                        <p>Details about Project 1...</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Project 2</button>
+                    <div class="accordion-content">
+                        <p>Details about Project 2...</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Project 3</button>
+                    <div class="accordion-content">
+                        <p>Details about Project 3...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASD Diary Section -->
+        <section id="asd-diary">
+            <h1>ASD Diary</h1>
+            <div class="timeline">
+                <div class="timeline-year">
+                    <h2>2024</h2>
+                    <ul>
+                        <li>Jan 15: Event Description</li>
+                        <li>Feb 10: Another Event</li>
+                    </ul>
+                </div>
+                <div class="timeline-year">
+                    <h2>2023</h2>
+                    <ul>
+                        <li>Mar 20: Event Details</li>
+                        <li>Apr 25: Another Example</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="gallery">
+                <img class="gallery-item" src="image1.jpg" alt="Sample Image 1">
+                <img class="gallery-item" src="image2.jpg" alt="Sample Image 2">
+                <img class="gallery-item" src="image3.jpg" alt="Sample Image 3">
+            </div>
+            <div id="lightbox" class="lightbox"></div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact-me">
+            <h1>Contact Me</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Safeguarding (18+ Access) -->
+        <section id="safeguarding">
+            <h1>18+ Access</h1>
+            <div id="age-verification">
+                <p>This area is restricted. Please verify your age to proceed.</p>
+                <input type="password" id="age-password" placeholder="Enter password">
+                <button id="verify-age">Verify Age</button>
+            </div>
+            <div id="warning-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Age Restricted</h2>
+                    <p>By proceeding, you confirm you are of legal age to view this content.</p>
+                    <button id="confirm-age">I Confirm</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Stef's Showcase. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
